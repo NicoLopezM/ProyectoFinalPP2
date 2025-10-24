@@ -1,0 +1,14 @@
+git init > crea un archivo .git para poder utilizar los comandos git
+git clone +url > clona el repositrio
+(dentro de la carpeta para abrir el proyecto)> code .
+git branch > visualiza las ramas del repositorio : main- rama principal
+git checkout -b (nombre)> crea el ID de la rama y te mueve
+git brach -d (nombre de la rama)
+git checkout main > se mueve a la rama main
+clear > limpia la terminal
+git add . > se agrega todos los cambios al stagin
+git status > para ver el stado del stagin
+git commit -m (id de la tarea)
+git push origin main > sube los cambios a la rama main
+git push origin (nombre de la branch)
+git pull origin main > trae los cambios del merge, hechos

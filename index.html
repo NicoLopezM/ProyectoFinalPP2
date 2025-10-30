@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Jugadores</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Jugadores del Club Eucalipto</h1>
+
+        <form id="formJugador">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            <input type="text" id="dni" placeholder="dni" required>
+
+            <select id="categoria" required>
+                <option value="">Seleccionar categoría</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
+            </select>
+            <p>Fecha de ingreso al club</p>
+            <input type="date" id="fechaIngreso" required>
+           
+
+            <button type="submit">Agregar Jugador</button>
+        </form>
+
+        <h2>Lista de Jugadores</h2>
+        <div id="listaJugadores" class="lista"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -20,6 +20,7 @@ header {
     background-image: url(imagenes/portada2.jpg);
     background-size: cover;/* Ajusta la imagen para cubrir todo el encabezado */
     background-position: center;
+    height: 100vh;
 
 }
 header h1 {/* Estilo del título dentro del encabezado */

@@ -14,7 +14,7 @@ header {
     color: white;/* Color del texto */
     padding: 20px 10px;/* Espaciado arriba y abajo */
     text-align: center;
-    font-size: 28px;
+    font-size: 28px;/* Tamaño de fuente */
     font-weight: bold;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);/* Sombra sutil */
     background-image: url(imagenes/portada2.jpg);
@@ -27,6 +27,12 @@ header h1 {/* Estilo del título dentro del encabezado */
     font-size: 70px;/* Tamaño de fuente */
     font-weight: bold;/* Negrita */
     color: rgb(46, 194, 54);/* Color del texto */
+}
+nav {
+    background-color: rgb(46, 82, 45); /* Color de fondo de la barra de navegación */
+    padding: 5px;/* Espaciado */
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);/* Sombra sutil */
 }
 
 

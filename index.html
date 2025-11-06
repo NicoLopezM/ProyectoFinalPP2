@@ -8,38 +8,27 @@
 </head>
 <body>
     <header>
-         <h1>Club Burzaco</h1>
+         <h1>Club Eucalipto</h1>
     </header>
     <nav> 
     </nav>  
     <div class="container">
-        <h1>Tienda Deportiva: </h1>
-        <h1>Fit-Your-Sports</h1>
-        <h2>Ingreso de Productos</h2>
+        <h1>Registro de Jugadores</h1>
 
-        <form id="formProd">
-            <input type="text" id="nombre" placeholder="Nombre del Producto" required>
-            <input type="text" id="marca" placeholder="Marca" required>
-            <input type="number" id="codbar" placeholder="Código de Barras" required>
+        <form id="formJugador">
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="text" id="apellido" placeholder="Apellido" required>
+            <input type="text" id="dni" placeholder="dni" required>
 
             <select id="categoria" required>
                 <option value="">Seleccionar categoría</option>
-                <option value="prendasup">Prenda Superior</option>
-                <option value="prendainf">Prenda Inferior</option>
-                <option value="zapatillas">Zapatillas</option>
-                <option value="prodvenc">Producto con vencimiento</option>
+                <option value="2008">2008</option>
+                <option value="2007">2007</option>
+                <option value="2006">2006</option>
             </select>
-            <p>Fecha de ingreso</p>
+            <p>Fecha de ingreso al club</p>
             <input type="date" id="fechaIngreso" required>
-           
 
-            <button type="submit">Agregar Producto</button>
+
+            <button type="submit">Agregar Jugador</button>
         </form>
-
-        <h2>Listado de Productos</h2>
-        <div id="listaJugadores" class="lista"></div>
-    </div>
-
-    <script src="script.js"></script>
-</body>
-</html>

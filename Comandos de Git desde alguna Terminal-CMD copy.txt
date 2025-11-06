@@ -13,7 +13,14 @@ git push origin main > sube los cambios a la rama main
 git push origin (nombre de la branch)
 git pull origin main > trae los cambios del merge, hechos
 
+<<<<<<< HEAD:Comandos de Git desde alguna Terminal-CMD copy.txt
 
 
 Subir proyectos html
 github pages
+=======
+cualquier cambio:
+1-git add .
+2-git commit -m "nombre descriptivo" ( nesesario)
+3-git push origin main
+>>>>>>> e4774d43c51c6c6a668819bbb9b50d61e65493e6:Comandos de Git desde alguna Terminal-CMD.txt

@@ -1,15 +1,22 @@
 body {
-    background: #F0F2F5;
+    background: #5178b3;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
+    background-image: url('imagenes/pelotas.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover;       /* Para que ocupe toda la pantalla */
+    background-position: center;  /* Centra la imagen */
+    background-attachment: fixed; /* La imagen se queda fija al hacer scroll */
+    
 }
+
+
 
 .container {
     max-width: 500px;
-    margin: 40px auto;
+    margin: 30px auto;
     background: white;
-    padding: 20px 30px;
+    padding: 60px 30px;
     border-radius: 12px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -36,7 +43,7 @@ form input, form select {
 form button {
     margin-top: 10px;
     padding: 12px;
-    background: #2196F3;
+    background: #37883d;
     border: none;
     border-radius: 8px;
     color: white;
@@ -46,7 +53,7 @@ form button {
 }
 
 form button:hover {
-    background: #1976D2;
+    background: #37883d;
 }
 
 .lista {
@@ -58,7 +65,7 @@ form button:hover {
 .jugador {
     background: #fafafa;
     padding: 12px;
-    border-left: 5px solid #2196F3;
+    border-left: 5px solid #37883d;
     border-radius: 6px;
     font-size: 15px;
     color: #444;

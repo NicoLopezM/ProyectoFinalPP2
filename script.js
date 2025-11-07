@@ -11,14 +11,15 @@ class Persona {
 }
 
 class Jugador extends Persona {
-    constructor(nombre, apellido,dni, categoria, fechaIngreso) {
+    constructor(nombre, apellido, dni, categoria, deporte, fechaIngreso) {
         super(nombre, apellido,dni);
         this.categoria = categoria;
+        this.deporte = deporte;
         this.fechaIngreso = fechaIngreso;
     }
 
     presentarse() {
-        return `${this.nombre} ${this.apellido} DNI:${this.dni} - Categoría ${this.categoria} (Ingreso: ${this.fechaIngreso})`;
+        return `${this.nombre} ${this.apellido} DNI:${this.dni} - Categoría ${this.categoria} - Deporte: ${this.deporte} , Fecha de Ingreso: ${this.fechaIngreso}`;
         // Sobrescribe el método presentarse de Persona
     }
 }
@@ -35,7 +36,7 @@ function mostrarJugadores() {//Función para mostrar jugadores
     jugadores.forEach(j => {//Recorrer jugadores
         const div = document.createElement("div");//Crear div para cada jugador
         div.classList.add("jugador");//Agregar clase CSS
-        div.textContent = new Jugador(j.nombre, j.apellido, j.dni, j.categoria, j.fechaIngreso).presentarse();
+        div.textContent = new Jugador(j.nombre, j.apellido, j.dni, j.categoria, j.deporte, j.fechaIngreso).presentarse();
         //Mostrar presentación del jugador
         listaDiv.appendChild(div);//Agregar al contenedor
     });
@@ -52,9 +53,10 @@ form.addEventListener("submit", e => {//Evento al enviar formulario
     const apellido = document.getElementById("apellido").value;
     const dni = document.getElementById("dni").value;
     const categoria = document.getElementById("categoria").value;
+    const deporte = document.getElementById("deporte").value;
     const fechaIngreso = document.getElementById("fechaIngreso").value;
 
-    const nuevoJugador = new Jugador(nombre, apellido,dni, categoria, fechaIngreso);//Crear nuevo jugador
+    const nuevoJugador = new Jugador(nombre, apellido,dni, categoria, deporte, fechaIngreso);//Crear nuevo jugador
     jugadores.push(nuevoJugador);//Agregar al array
 
     guardarJugadores();
